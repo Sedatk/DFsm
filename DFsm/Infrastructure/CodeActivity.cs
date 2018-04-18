@@ -10,6 +10,7 @@ namespace DFsm.Infrastructure
         {
             Execute(context, args);
         }
+
         async Task ICodeActivity.ExecuteAsync(IStateMachineContext context, object args)
         {
             await ExecuteAsync(context, args);
